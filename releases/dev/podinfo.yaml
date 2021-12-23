@@ -17,6 +17,6 @@ spec:
     image:
       repository: 2011yiying/podinfo
       tag: dev-50cmqna1
-    replicaCount: 1
+    replicaCount: 2
     hpa:
       enabled: false
