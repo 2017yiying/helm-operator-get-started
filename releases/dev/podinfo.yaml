@@ -18,7 +18,7 @@ spec:
       repository: 2011yiying/podinfo
       tag: dev-50cmqna1
     imagePullSecrets:
-      - name: myregistrykey
+      - name: registrykey-myhub
     replicaCount: 1
     hpa:
       enabled: false
