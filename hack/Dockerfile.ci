@@ -28,11 +28,8 @@ RUN CGO_ENABLED=0 GOOS=linux go build -ldflags "-s -w \
 FROM alpine:3.10
 # 设置时区
 ENV TZ=Asia/Shanghai
-# 替换国内源
-RUN echo "https://mirror.tuna.tsinghua.edu.cn/alpine/v3.13/main" > /etc/apk/repositories \
-&& echo "https://mirror.tuna.tsinghua.edu.cn/alpine/v3.13/community" >> /etc/apk/repositories \
-# 时区修正
-&& apk add tzdata \
+
+RUN apk add tzdata \
 && cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
 && echo "Asia/Shanghai" > /etc/timezone \
 && apk del tzdata \
