@@ -17,7 +17,7 @@ spec:
     image:
       repository: 2011yiying/podinfo
       tag: dev-50cmqna1
-    replicaCount: 2
+    replicaCount: 1
     imagePullSecrets:
     - name: my-secret
     hpa:
