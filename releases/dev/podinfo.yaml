@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: 2011yiying/podinfo
-      tag: dev-50cmqna1
+      tag: dev-aygsbuox
     replicaCount: 1
     imagePullSecrets:
     - name: my-secret
