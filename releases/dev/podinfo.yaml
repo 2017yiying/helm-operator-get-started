@@ -19,6 +19,6 @@ spec:
       tag: dev-50cmqna1
     replicaCount: 1
     imagePullSecrets:
-      - name: myregistrykey
+      - name: registrykey-myhub
     hpa:
       enabled: false
