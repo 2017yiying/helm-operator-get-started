@@ -19,6 +19,6 @@ spec:
       tag: dev-50cmqna1
     replicaCount: 2
     imagePullSecrets:
-      - name: my-secret
+    - name: my-secret
     hpa:
       enabled: false
